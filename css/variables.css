@@ -28,10 +28,10 @@ a.id {
     }
 }
 div.blur.nonblur {
-    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
     filter: blur(0px);
 }
 div.blur {
-    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+    -webkit-filter: blur(20px); /* Safari 6.0 - 9.0 */
     filter: blur(20px);
 }
