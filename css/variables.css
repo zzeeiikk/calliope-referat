@@ -21,15 +21,32 @@ a.id {
     visibility: hidden;
 }
 
+@media screen and (max-width: 1088px){
+    .navbar, .navbar-menu, .navbar-start, .navbar-end {
+        align-items: stretch;
+        display: flex;
+    }
+}
+
 @media screen and (max-width: 900px) {
-    .navbar.is-fixed-top {
-        position: absolute;
+    .content{
+        margin: 3rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar, .navbar-menu, .navbar-start, .navbar-end{
+        display: block
     }
 }
 
 @media screen and (max-width: 350px) {
-    .navbar.is-fixed-top {
-        position: absolute;
+    .navbar, .navbar-menu, .navbar-start, .navbar-end{
+        display: block;
+    }
+    .content{
+        margin: 1rem;
     }
 }
 div.blur.nonblur {
