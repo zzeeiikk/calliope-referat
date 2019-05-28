@@ -1,3 +1,8 @@
+h2{
+    padding-top: 10rem; 
+    margin-top: -40px;
+}
+
 .navbar{
     padding: 1rem 5rem;
     border-bottom: solid 1px #dbdbdb;
@@ -34,4 +39,38 @@ div.blur.nonblur {
 div.blur {
     -webkit-filter: blur(20px); /* Safari 6.0 - 9.0 */
     filter: blur(20px);
+}
+
+/* Print Handout */
+@media print{
+    h2{
+        padding-top: 1rem; 
+        margin-top: -4px;
+        page-break-before: always;
+    }
+    
+    .navbar{
+        visibility: hidden;
+    }
+    
+    .content{
+        margin: 1rem;
+        padding: 1rem 1.5rem;
+    }
+    
+    a.id {
+        display: block;
+        position: relative;
+        top: -250px;
+        visibility: hidden;
+    }
+    
+    div.blur.nonblur {
+        -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+        filter: blur(0px);
+    }
+    div.blur {
+        -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+        filter: blur(0px);
+    }
 }
