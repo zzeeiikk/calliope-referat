@@ -60,14 +60,34 @@ div.blur {
 
 /* Print Handout */
 @media print{
-    h2{
+    h2#aufgabe1{
         padding-top: 1rem; 
         margin-top: -4px;
         page-break-before: always;
     }
+
+    h2#aufgabe2{
+        padding-top: 2rem;
+    }
     
-    .navbar{
-        visibility: hidden;
+    h2#links{
+        padding-top: 1rem; 
+        margin-top: -4px;
+        page-break-before: always;
+    }    
+
+    div#link{
+        display: none;
+    }
+    
+    h2#lit{
+        padding-top: 1rem; 
+        margin-top: -4px;
+        page-break-before: always;
+    }
+
+    .hr, .navbar{
+        display: none;
     }
     
     .content{
@@ -75,19 +95,17 @@ div.blur {
         padding: 1rem 1.5rem;
     }
     
-    a.id {
-        display: block;
-        position: relative;
-        top: -250px;
-        visibility: hidden;
-    }
-    
     div.blur.nonblur {
         -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
         filter: blur(0px);
+        width: 90%;
+
     }
     div.blur {
         -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
         filter: blur(0px);
+        width: 90%;
+
     }
+
 }
